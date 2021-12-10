@@ -27,17 +27,17 @@ overflow-y: hidden;
   color: #242535;
   background-color: #242535;
   z-index: -5;
-  border-radius: 0 52% 67% 0;
+  border-radius: 100%;
   /* overflow-x: hidden; */
-  width: 100%;
-  height: 152%;
-  top: -120px;
-  left: -24%;
+  width: 199%;
+  height: 239%;
+  top: -514px;
+  left: -125%;
 }
   nav{
       height: 10vh;
       background-color: none;
-      padding: 0 10%;
+      padding: 0 8%;
       display: flex;
       justify-content: space-between;
   }
@@ -48,7 +48,7 @@ overflow-y: hidden;
   .nav-links{
       display: flex;
       list-style: none;
-      width: 69%;
+      width: 65%;
       height: 100%;
       justify-content: space-around;
       align-items: center;
