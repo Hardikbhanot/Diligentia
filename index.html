@@ -15,17 +15,17 @@
   </head>
 
   <body>
+    <div class = "burger">
+    
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
     <section class="hero">
     <navbar>
         <!-- <div class="container"> -->
             
                 <nav>
-                    <div class="burger">
-                    
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
                     <div class="logo"><a href="#"><img src="media/images/logo.png" alt=""></a></div>
                     <ul class="nav-links">
                         
@@ -40,6 +40,7 @@
               </div>
         
     </navbar>
+    
     <div class="hero-main">
       <div class="left-circle"></div>
       <div class="right-circle"></div>
@@ -79,9 +80,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
     <script type="text/javascript" src="js/index.js"></script>
+    
     <script>
-      console.log(window.innerHeight);
-      console.log(window.innerWidth);
+
+      window.addEventListener('scroll', function () {
+    let header = document.querySelector('navbar');
+    let scrolamount = window.scrollY;
+    if(scrolamount ==0){
+      header.style.backgroundColor="transparent";
+      
+    }
+    if(scrolamount>100){
+      header.style.position = "fixed";
+      header.style.backgroundColor="rgba(222,223,225,.75)";
+      header.style.zIndex = 1000; 
+    }
+    
+  })
+  console.log(innerHeight)
+  console.log(innerWidth)
     </script>
   </body>
 </html>
