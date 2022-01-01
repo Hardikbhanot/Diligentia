@@ -42,7 +42,7 @@ overflow-y: hidden;
       /* position:absolute; */
       background-color: transparent;
       padding: 0 8%;
-      display: flex;
+      display: flex !important;
       justify-content: space-between;
   }
   .nav-links-a1 > img{
