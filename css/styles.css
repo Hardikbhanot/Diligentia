@@ -16,7 +16,7 @@ body{
 .hero{
   /* background:  radial-gradient(106.8% 227.5% at 100% 1.49%, #000000 0%, #242535 86.2%, #242535 100%);
    */
-   background: url("/media/images/background.svg") no-repeat;
+   background: url("../media/images/background.svg") no-repeat;
    background-size: cover;
    background-position: -50px;
    background-color:#DBD8E3;
