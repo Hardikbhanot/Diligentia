@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="css/parallax.css">
+    <link rel="stylesheet" href="css/splide.min.css">
+</head>
+<body>
+    <section style="height: 100vh;"></section>
+    <section class="hb_mentorship">
+        <div class="hb_mentorship-text">
+            <h2>Mentorship</h2>
+        </div>
+        
+        <!-- <div class="splide">
+        <div class="splide__trac"> -->
+        <div class="hb_mentorship-pages">
+            <div>
+                <h2>Project one</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit harum debitis est eligendi enim accusantium illum odit repudiandae ipsum praesentium?</p>
+            </div>
+            <div>
+                <h2>Project 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit harum debitis est eligendi enim accusantium illum odit repudiandae ipsum praesentium?</p>
+            </div>
+            <div>
+                <h2>Project 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit harum debitis est eligendi enim accusantium illum odit repudiandae ipsum praesentium?</p>
+            </div>
+        </div>
+    </div>
+<!--         
+        <div class="splide">
+        <div class="splide__track">
+        <div class="hb_mentorship-pages splide__list">
+            <div class="splide__slide">
+                <h2>Project one</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit harum debitis est eligendi enim accusantium illum odit repudiandae ipsum praesentium?</p>
+            </div>
+            <div class="splide__slide">
+                <h2>Project 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit harum debitis est eligendi enim accusantium illum odit repudiandae ipsum praesentium?</p>
+            </div>
+            <div class="splide__slide">
+                <h2>Project 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit harum debitis est eligendi enim accusantium illum odit repudiandae ipsum praesentium?</p>
+            </div>
+        </div>
+    </div> -->
+    </section>
+    <section style="height: 100vh;"></section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js" integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/splide.min.js"></script>
+   <script>
+       if(window.innerWidth<=768){
+           console.log("ndjnjdnf")
+           const mentorship= document.querySelector('.hb_mentorship')
+           mentorship.innerHTML=`<div class="hb_mentorship-text">
+            <h2>Mentorship</h2>
+        </div>
+        <div class="splide">
+        <div class="splide__track">
+        <div class="splide__list hb_mentorship-pages">
+            <div class="splide__slide">
+                <h2>Project one</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit harum debitis est eligendi enim accusantium illum odit repudiandae ipsum praesentium?</p>
+            </div>
+            <div class="splide__slide">
+                <h2>Project 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit harum debitis est eligendi enim accusantium illum odit repudiandae ipsum praesentium?</p>
+            </div>
+            <div class="splide__slide">
+                <h2>Project 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit harum debitis est eligendi enim accusantium illum odit repudiandae ipsum praesentium?</p>
+            </div>
+        </div>
+    </div>`
+           var splide = new Splide( '.splide', {
+            direction: 'ttb',
+            height   : '100vh',
+            wheel    : true,
+            } );
+    
+            splide.mount();
+
+       }
+       if(window.innerWidth>=768){
+       function splitScroll(){
+           const controller=new ScrollMagic.Controller()
+           new ScrollMagic.Scene({
+                duration:'200%',
+                triggerElement:'.hb_mentorship-text',
+                triggerHook:0
+           })
+           .setPin('.hb_mentorship-text')
+           .addTo(controller)
+       }
+       splitScroll()
+    }
+   </script> 
+</body>
+</html>
