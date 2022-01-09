@@ -1,0 +1,104 @@
+
+.Ourvision{
+    margin: 5% 2% 5% 2%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0,0, 0, 0.5);
+    padding: 10% 10%;
+    background-color: #DBD8E3;
+    position: relative;
+    overflow: hidden;
+}
+.Ourvision .vl {
+    left: 0;
+    bottom: 0;
+    border-left: 20px solid #2A2438;
+    height: 500px;
+    position: absolute;
+}
+.Ourvision .vl-r{
+    right: -1px;
+    top:0;
+    border-left: 20px solid #2A2438;
+    height: 500px;
+    position: absolute;
+}
+.top{
+    margin: -5% 0% -5% 0% ;
+    font-size: 400%;
+    font-weight: 700;
+}
+.line{
+    width: 90px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.line hr{
+    height: 8px;
+    background-color:black;
+}
+.Content{
+    margin: -40px;
+    display: flex;
+    flex-direction: row;
+}
+.Ourvission-left{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.Ourvission-right{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    float: none;
+}
+.v-point{
+    text-align: left;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10%;
+    display: flex;
+    flex-direction: row;
+}
+.v-point div{
+    margin-top: -4%;
+    margin-right: 15px;
+    height: 50px;
+    width: 50px; 
+    font-size: 65px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #2A2438;
+    text-shadow: 3px 3px 3px #2A2438;
+    padding-right: 10px;
+    float: left;
+    display: inline;
+}
+@media screen and (max-width: 768px) {
+    .Content {
+      flex-direction: column;
+    }
+    .Ourvission-left{
+        width: 100%;
+    }
+    .Ourvission-right{
+        width: 100%;
+    }
+    .Content{
+        margin: 0%;
+    }
+    .v-point{
+        font-size: large;
+    }
+    .v-point div{
+        font-size: 50px;
+    }
+    .top{
+        font-size: 300%;
+    }
+    .line hr{
+        height: 5px;
+        width: 90%;
+    }
+  }
+
