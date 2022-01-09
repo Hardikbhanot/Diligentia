@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hb_mentorship{
+    height: 300vh;
+    display: flex;
+}
+.hb_mentorship-text{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+}
+
+.hb_mentorship-pages{
+    width: 50%;
+}
+.hb_mentorship-text h2{
+    font-size: 4rem;   
+}
+.hb_mentorship-pages div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.hb_mentorship-pages div p{
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+}
+.hb_mentorship-pages div:nth-child(1){
+    background-color: red;
+}
+.hb_mentorship-pages div:nth-child(2){
+    background-color: greenyellow;
+}
+.hb_mentorship-pages div:nth-child(3){
+    background-color: blue;
+}
+
+@media screen and (max-width:768px){
+    .hb_mentorship{
+        flex-direction: column;
+    }
+    .hb_mentorship-pages{
+        width: 100%;
+    }
+}
