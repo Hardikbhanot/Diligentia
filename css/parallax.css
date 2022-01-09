@@ -50,4 +50,7 @@
     .hb_mentorship-pages{
         width: 100%;
     }
+    .splide__arrow{
+        display: none !important;
+    }
 }

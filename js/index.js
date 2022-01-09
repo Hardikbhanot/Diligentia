@@ -10,13 +10,13 @@ window.addEventListener('scroll', function () {
     let scrolamount = window.scrollY;
     if(scrolamount ==0){
       header.style.backgroundColor="transparent";
-      lightLinks.forEach(i => {
-        i.style.color="#DBD8E3"
-      });
+      // lightLinks.forEach(i => {
+      //   i.style.color="#DBD8E3"
+      // });
       header.style.position="static"
-      burger.style.border="1px solid white"
-      line.forEach((item) =>
-        item.style.backgroundColor="white");
+      // burger.style.border="1px solid white"
+      // line.forEach((item) =>
+      //   item.style.backgroundColor="white");
       
     }
     if(scrolamount>450){

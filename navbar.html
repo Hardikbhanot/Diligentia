@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="css/navbar.css">
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+    <navbar>
+      <nav>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="logo">
+          <a href="#"><img src="media/images/logo.png" alt="" /></a>
+        </div>
+        <ul class="nav-links">
+          <li><a  href="">Home</a></li>
+          <li><a  href="">Our Vision</a></li>
+          <li><a  href="">Contact</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Team</a></li>
+        </ul>
+      </nav>
+    </navbar>
+    <section style="height: 100vh;">
+
+    </section>
+    <script>
+        const burger=document.querySelector(".burger")
+        const navlinks=document.querySelector("nav .nav-links")
+        const links= document.querySelectorAll(".nav-links li a")
+        const line=document.querySelectorAll(".burger >.line")
+        const nav= document.querySelector("nav")
+        const header = document.querySelector('navbar');
+        burger.addEventListener("click", toggleMenu);
+        let showMenu = false;
+    function toggleMenu() {
+    if (!showMenu) {
+        burger.classList.add("open");
+        navlinks.classList.add("open");
+        nav.classList.add("open"); 
+        line.forEach((item) =>
+        item.classList.add("open"));
+        // Reset the menu state
+        showMenu = true;
+    
+    } else {
+    
+        burger.classList.remove("open");
+        navlinks.classList.remove("open");
+        nav.classList.remove("open");
+        line.forEach((item) =>
+            item.classList.remove("open"))
+
+        // Reset the menu state
+        showMenu = false;
+    }
+    }
+    </script>
+  </body>
+</html>
