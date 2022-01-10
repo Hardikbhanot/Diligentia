@@ -6,6 +6,8 @@ const nav= document.querySelector("nav")
 const header = document.querySelector('navbar');
 const lightLinks=document.querySelectorAll('.light-link')
 const heroMain=document.querySelector(".hero-main")
+const logo= document.querySelector(".logo a img")
+const logoContainer= document.querySelector(".logo")
 window.addEventListener('scroll', function () {
     let scrolamount = window.scrollY;
     if(scrolamount ==0){
@@ -14,9 +16,9 @@ window.addEventListener('scroll', function () {
       //   i.style.color="#DBD8E3"
       // });
       header.style.position="static"
-      // burger.style.border="1px solid white"
-      // line.forEach((item) =>
-      //   item.style.backgroundColor="white");
+      logo.style.height="60px"
+      logo.style.width="60px"
+      logoContainer.style.marginTop="1%"
       
     }
     if(scrolamount>450){
@@ -30,7 +32,9 @@ window.addEventListener('scroll', function () {
       lightLinks.forEach(i => {
         i.style.color="#5C5470"
       });
-      
+      logo.style.height="45px"
+      logo.style.width="45px"
+      logoContainer.style.marginTop="0.25%"
     }
     
   })
@@ -47,24 +51,35 @@ function toggleMenu() {
       });
         // lightLinks.style.color='#000'
         burger.classList.add("open");
-        navlinks.classList.add("open");
         nav.classList.add("open");
         // lightLinks.classList.add("open");
         links.forEach((item) =>
         item.classList.add("fade"));
-
+        if(window.innerWidth<768){
+          navlinks.classList.add("open2");
+        }
+        else if(window.innerWidth>768){
+          navlinks.classList.add("open");
+          
+        }
         // Reset the menu state
         showMenu = true;
     
     } else {
     
         burger.classList.remove("open");
-        navlinks.classList.remove("open");
+        
         nav.classList.remove("open");
         // .classList.remove("open");
         links.forEach((item) =>
             item.classList.remove("fade"));
-
+            if(window.innerWidth<768){
+              navlinks.classList.remove("open2");
+            }
+            else if(window.innerWidth>768){
+              navlinks.classList.remove("open");
+              
+            }
         // Reset the menu state
         showMenu = false;
     }

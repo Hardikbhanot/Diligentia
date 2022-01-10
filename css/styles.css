@@ -69,8 +69,8 @@ nav {
   position: relative;
   display: flex;
   list-style: none;
-  width: 75%;
-  height: 100%;
+  /* width: 75%;
+  height: 100%; */
   justify-content: space-around;
   align-items: center;
   margin-left: auto;
@@ -230,8 +230,7 @@ nav {
   z-index: 1000;
 }
 .nav-links.open {
-  clip-path: polygon(1250px at 90% -10%);
-  -webkit-clip-path: polygon(1250px at 90% -10%);
+
   pointer-events: all;
   margin-left: 50%;
 }
@@ -285,7 +284,11 @@ nav {
 .nav-links li {
   opacity: 0;
 }
+.nav-links.open2{
 
+  pointer-events: all;
+  margin-left: -8%;
+}
 .nav-links li a {
   font-size: 25px;
 }
@@ -394,7 +397,10 @@ display: none!important;
     margin-top: 3%;
     font-size: 3.5rem;
   }
-
+  .nav-links{
+    width: 100%;
+    /* margin-left: -8%; */
+  }
   .hero-main {
     flex-direction: column;
     margin: 1% 5%;
