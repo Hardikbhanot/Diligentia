@@ -62,7 +62,9 @@ nav {
 .nav-links-a1 > img {
   margin-left: -25%;
 }
-
+.svg-inline--fa{
+  margin-right: 10px;
+}
 .nav-links {
   position: relative;
   display: flex;
@@ -78,7 +80,7 @@ nav {
 }
 .nav-links li a {
   text-decoration: none;
-  /* color:#5C5470; */
+  color:#5C5470;
   font-size: 1.4rem;
   list-style: none;
   font-weight: 600;
@@ -324,6 +326,65 @@ nav {
     width: 86%;
   }
 } */
+
+
+
+.meghansh-container{
+  height: 400px;
+  padding: 2rem 1rem 0 0;
+  width: 80%;
+  margin: 8% auto;
+
+}
+.j-text {
+width: 76%!important;
+display: block;
+  margin-left: 22%;
+  height: 20%;
+}
+.j-content-image{
+  display: block;
+  margin: auto;
+  width: 80%!important;
+}
+
+.referral{
+  display: none!important;
+}
+.j-image {
+margin-left: 10%;
+/* box-shadow: #242535 2px 3px 4px 5px; */
+
+}
+
+.juicer-feed li.feed-item {
+background-color: #FFF!important;
+}
+.slick-arrow{
+
+border-radius: 30px!important;
+
+}
+.slick-arrow::before:hover{
+color: gray!important;
+}
+.juicer-feed.slider.j-modern li.feed-item a.j-image img {
+object-fit: contain;
+width: 256px;
+}
+
+
+.referral {
+display: none!important;
+}
+.material-icons.md-18 { font-size: 18px; }
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
   .logo > a > img {
     height: 45px;

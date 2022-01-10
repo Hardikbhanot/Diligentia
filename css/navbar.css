@@ -40,7 +40,9 @@ body{
     font-weight: 600;
     position: relative;
   }
-  
+  .svg-inline--fa{
+      margin-right: 10px;
+  }
   .light-link,
   .light-link:hover {
     color: #dbd8e3;
@@ -145,7 +147,7 @@ body{
         position: absolute;
         cursor: pointer;
         right: 5%;
-        top: 1.5%;
+        top: 15%;
         border: 1px solid #dbd8e3;
         border-radius: 5px;
         z-index: 102;
