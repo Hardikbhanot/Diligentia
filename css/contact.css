@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#dbd8e3 ;
+}
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-color: #dbd8e3;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    color: #2a2438;
+}
+
+.form-group {
+    margin-top: 60px;
+}
+
+/* .form-group{
+    height: 50px;
+    width: 50px;
+} */
+
+#nameEmail-box{
+    display: flex;
+}
+
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    /* border-radius: 9px; */
+    font-size: 1.1rem;
+}
+
+input,textarea{
+    border: none;
+    border-bottom: 2px solid #2a2438;
+    
+}
+
+input#name {
+    margin-right: 25px;
+}
+
+input#email {
+    margin-left: 25px;
+}
+
+input#phone {
+    width: 50%;
+}
+
+/* #contact-box form{
+    width: 40%;
+} */
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+.h-primary{
+    color: #2a2438;
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    position: relative;
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    width: 6%;
+    border-bottom: 5px solid #ffca00;
+    left: 0;
+    bottom: 0;
+}
+
+/* @media (max-width:1100px) and (min-width:860px){
+    h1::after{left: 36%}; 
+}
+@media (max-width:860px) and (min-width:0px){
+    h1::after{left: 32%}; 
+} */
+
+.btn{
+    padding: 6px 20px;
+    background-color:#ffca00;
+    color: #2a2438;
+    margin: 17px;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 11px;
+    width: 213px
+}
+
+.center{
+    text-align: center;
+}
+h1::after{
+    left: 20%;
+    width: 15%;
+}
+
+#nameEmail-box {
+    flex-direction: column;
+}
+
+input#name{
+    
+    width: 100%;
+}
+input#email{
+    margin: 0;
+    width: 100%;
+}
+input#phone{
+    width: 100%;
+}

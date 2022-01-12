@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.about-main-content {
+  height: 100vh;
+  background-color: #dbd8e3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2% 10%;
+}
+
+.about-main-content h1 {
+  text-align: center;
+  color: #5c5470;
+  font-size: 3.8rem;
+}
+
+.about-main-content h1 span {
+  padding: 12px;
+  font-family: 'Bree Serif', serif;
+  position: relative;
+  display: inline;
+  text-align: center;
+}
+
+.about-main-content h1 span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  background-color: #ffca00;
+  left: 0;
+  z-index: 1;
+  margin-left: 1%;
+  bottom: 0;
+}
+
+.about-main-content h2 {
+  font-size: 1.7rem;
+  margin: 5% auto;
+  color: #5c5470;
+}
+
+.about-main-content .para {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-main-content .para .left-para, .about-main-content .para .right-para {
+  color: #393444;
+  width: 45%;
+  font-size: 1.4rem;
+}
+/*# sourceMappingURL=about.css.map */
