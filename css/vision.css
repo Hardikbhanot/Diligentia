@@ -71,6 +71,9 @@
     padding-left: 10px;
     position: relative;
 }
+.v-point strong{
+    font-size: xx-large;
+}
 .v-point .dabba div{
     margin-top: -40%;
     font-size: 65px;
@@ -96,7 +99,10 @@
         font-size: large;
     }
     .v-point div{
-        font-size: 50px;
+        font-size: smaller;
+    }
+    .points strong{
+        font-size: medium;
     }
     .top{
         font-size: 300%;
