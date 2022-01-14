@@ -115,7 +115,7 @@ if(window.innerWidth<=768){
 
   var splide = new Splide( '.splide', {
    direction: 'ttb',
-   height   : '100vh',
+   height   : '90vh',
    wheel    : true,
    releaseWheel: true
    } );
