@@ -88,15 +88,16 @@ function toggleMenu() {
 if(window.innerWidth<=768){
   console.log("ndjnjdnf")
   const mentorship= document.querySelector('.hb_mentorship')
-  mentorship.innerHTML=`<div class="hb_mentorship-text">
+  mentorship.innerHTML=`
+<div class="splide">
+<div class="splide__track">
+<div class="splide__list hb_mentorship-pages">
+<div class=" splide__slide hb_mentorship-text">
   <h2>Mentorship Program</h2>
   <p>
       The Mentorship Program is an initiative by Diligentia, where we seek to conduct live webinars & sessions for students who want to learn the core skills of a successful entrepreneur. Renowned entrepreneurs,  mentors, and coaches will be sharing their insights & explicit knowledge in their field of expertise. Students can enroll for various sessions ranging from finance, e-commerce, trading, small business, startups, market research, AI & so on. If you want to learn about entrepreneurship & business from the people who have aced it, you hit the right spot. 
   </p>
   </div>
-<div class="splide">
-<div class="splide__track">
-<div class="splide__list hb_mentorship-pages">
    <div class="splide__slide first-mentorship">
        <h2>Project one</h2>
        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit harum debitis est eligendi enim accusantium illum odit repudiandae ipsum praesentium?</p>
