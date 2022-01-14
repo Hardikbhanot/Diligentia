@@ -8,44 +8,102 @@
 }
 .hb_mentorship-text{
     width: 50%;
+    background:  radial-gradient(106.8% 227.5% at 100% 1.49%, #000000 0%, #242535 86.2%, #242535 100%);
+
+    color:#fff;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 !important;
+    flex-direction: column;
 }
-
+.hb_mentorship-text p{
+    padding: 8% 4%;
+    font-size: 1.3rem;
+    text-align: justify;
+}
 .hb_mentorship-pages{
     width: 50%;
 }
+
+.hb_mentorship-pages .third-mentorship{
+    background-image: url("../media/images/mentorship-machine-learning.webp");
+    /* background-attachment: fixed; */
+    background-color: #B29E81;
+    /* color: #837d7d; */
+    background-blend-mode: luminosity;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hb_mentorship-pages .first-mentorship{
+    background-image: url("../media/images/mentorship-marketResearch2.jpg");
+    /* background-attachment: fixed; */
+    background-color:black;
+    /* color: #837d7d; */
+    background-blend-mode: luminosity;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hb_mentorship-pages .second-mentorship div{
+    background-color: rgba(138, 112, 112, 0.438);
+    margin: 20% 5%;
+}
+.hb_mentorship-pages .second-mentorship{
+    background-image: url("../media/images/mentorship-stockMarket.jpg");
+    /* background-attachment: fixed; */
+    background-color:black;
+    /* color: #837d7d; */
+    background-blend-mode: luminosity;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .hb_mentorship-text h2{
-    font-size: 4rem;   
+    font-size: 3rem;   
 }
 .hb_mentorship-pages div{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
 }
+.hb_mentorship-pages div h2{
+    font-size: 2.5rem;
+    color: white;
+}
+.hb_mentorship-pages .third-mentorship h2{   
+    font-size: 2rem;
+}
+
 .hb_mentorship-pages div p{
     width: 80%;
-    font-size: 18px;
+    margin: 5% auto;
+    font-size: 1.4rem;
+    text-align: justify;
+    color: white;
     line-height: 30px;
 }
-.hb_mentorship-pages div:nth-child(1){
+/* .hb_mentorship-pages div:nth-child(1){
     background-color: red;
-}
+} */
 .hb_mentorship-pages div:nth-child(2){
-    background-color: greenyellow;
+    background-color: #00053e;
 }
-.hb_mentorship-pages div:nth-child(3){
+/* .hb_mentorship-pages div:nth-child(3){
     background-color: blue;
-}
+} */
 
 @media screen and (max-width:768px){
     .hb_mentorship{
         flex-direction: column;
+        
+    }
+    .hb_mentorship-text{
+        width: 100%;
     }
     .hb_mentorship-pages{
         width: 100%;

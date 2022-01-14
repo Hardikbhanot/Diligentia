@@ -2,13 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color:#dbd8e3 ;
+    
 }
 
 #contact{
     position: relative;
+    background-color:#f2f2f2 ;
+    box-shadow: 0px 5px 20px rgb(0 0 0 / 50%);
+    border-radius: 10px;
+    margin: 5%;
 }
-
+#contact input{
+    background-color:#f2f2f2 ;
+}
 #contact::before{
     content: "";
     position: absolute;
@@ -16,7 +22,7 @@
     height: 100%;
     z-index: -1;
     opacity: 0.7;
-    background-color: #dbd8e3;
+    
 }
 
 #contact-box {
@@ -54,19 +60,29 @@ input,textarea{
     border-bottom: 2px solid #2a2438;
     
 }
-
+.contact-submit{
+    display: flex;
+}
 input#name {
     margin-right: 25px;
 }
 
-input#email {
-    margin-left: 25px;
-}
 
 input#phone {
     width: 50%;
 }
 
+.form-group-1{
+    display: flex;
+    
+}
+.form-group-1 input{
+    width: 40%;
+    outline: none;
+}
+.form-group-1 input::placeholder{
+    color: #2a2438;
+}
 /* #contact-box form{
     width: 40%;
 } */
@@ -76,7 +92,10 @@ input#phone {
     font-family: 'Bree Serif', serif;
 
 }
-
+#contact-box form{
+    width: 40%;
+    margin: 5%;
+}
 .h-primary{
     color: #2a2438;
     font-size: 3.8rem;
@@ -84,11 +103,13 @@ input#phone {
     font-family: 'Bree Serif', serif;
     position: relative;
 }
-
-h1::after{
+.h-primary span{
+    position: relative;
+}
+.h-primary span::after{
     content: "";
     position: absolute;
-    width: 6%;
+    width: 100%;
     border-bottom: 5px solid #ffca00;
     left: 0;
     bottom: 0;
@@ -102,16 +123,15 @@ h1::after{
 } */
 
 .btn{
+    margin: 15% auto;
     padding: 6px 20px;
     background-color:#ffca00;
     color: #2a2438;
-    margin: 17px;
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
     border: none;
     cursor: pointer;
+    font-weight: 700 !important;
     display: block;
-    margin: auto;
-    margin-top: 10px;
     border-radius: 11px;
     width: 213px
 }
@@ -127,15 +147,30 @@ h1::after{
 #nameEmail-box {
     flex-direction: column;
 }
-
+.form-group input::placeholder{
+    color: #2A2438;
+}
+.form-group input{
+    outline: none;
+}
 input#name{
     
     width: 100%;
 }
 input#email{
-    margin: 0;
+    /* margin: 0; */
     width: 100%;
 }
 input#phone{
     width: 100%;
+}
+
+@media screen and (max-width:768px){
+    .form-group-1{
+        flex-direction: column;
+    }
+    .form-group-1 input{
+        width: 100%;
+        margin-top: 60px;
+    }
 }

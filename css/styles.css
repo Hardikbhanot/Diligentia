@@ -234,6 +234,8 @@ nav {
   pointer-events: all;
   margin-left: 50%;
 }
+
+
 .burger > .line {
   transition: all 0.3s ease-in;
   height: 3px;
