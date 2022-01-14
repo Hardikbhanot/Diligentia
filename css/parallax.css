@@ -9,7 +9,6 @@
 .hb_mentorship-text{
     width: 50%;
     background:  radial-gradient(106.8% 227.5% at 100% 1.49%, #000000 0%, #242535 86.2%, #242535 100%);
-
     color:#fff;
     height: 100vh;
     display: flex;
@@ -104,11 +103,21 @@
     }
     .hb_mentorship-text{
         width: 100%;
+        height: 80vh;
     }
     .hb_mentorship-pages{
         width: 100%;
     }
     .splide__arrow{
         display: none !important;
+    }
+    .hb_mentorship-pages div{
+        height: 80vh;
+    }
+    .hb_mentorship-pages div p{
+        font-size: 1.2rem;
+    }
+    .hb_mentorship-pages div h2{
+        font-size: 2.1rem;
     }
 }
