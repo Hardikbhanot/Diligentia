@@ -64,3 +64,120 @@
   font-size: 1.4rem;
 }
 /*# sourceMappingURL=about.css.map */
+
+#message-container{
+  width:90%;
+  display:block;
+  margin:auto;
+  text-align: justify;
+  position:relative;
+}
+
+.message{
+  position:absolute;
+  background-color: aquamarine;
+  margin-top:2%;
+  padding:3%;
+}
+
+.message-heading{
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.message-content{
+  display: flex;
+}
+
+
+.message-text{
+  padding-left:2%;
+}
+
+.message-text, .message-image{
+  width:50%;
+}
+
+.message-image img{
+  width:100%;
+}
+
+#convenor-message{
+  background-color: #dbd8e3;
+  z-index:-1;       
+  color:#fff;    
+}
+
+
+#principal-message{
+  margin-top:7%;
+  margin-left:5%;
+}
+
+.principal-message-animation{
+  animation-name:convenorMessageAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.convenor-message-active{
+  animation-name:convenorMessageAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.convenor-message-inactive{
+  animation-name:convenorMessageAnimationInactive;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes convenorMessageAnimation{
+  0%{
+      width:90%;
+      opacity: 1;
+  }
+  
+  50%{
+      width:0%;
+      opacity: 0;
+  }
+  
+  100%{
+      width:90%;
+      opacity: 1;
+  }
+}
+@keyframes convenorMessageAnimationInactive{
+  0%{
+      width:90%;
+      opacity: 1;
+  }
+  
+  50%{
+      width:0%;
+      opacity: 0;
+  }
+  
+  100%{
+      width:90%;
+      opacity: 1;
+  }
+}
+
+
+@media (max-width:768px){
+  .message-text, .message-image{
+      width:100%;
+  }
+  .message-content{
+      flex-direction:column
+  }
+  #principal-message{
+      margin-top:10%;
+  }
+}
+@media (max-width:425px){
+  #principal-message{
+      margin-top:15%;
+  }
+}
